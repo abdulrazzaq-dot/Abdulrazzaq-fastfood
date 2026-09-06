@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Razzaq | Pakistani Fast Food</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0d0d0b;color:#fff;font-family:Arial,sans-serif}header{position:sticky;top:0;z-index:10;background:#090908;border-bottom:1px solid #4b3b13}.nav{max-width:1200px;margin:auto;display:flex;align-items:center;padding:14px 18px;gap:18px}.logo{margin-right:auto}.logo b{display:block;color:#f5b914;font-size:24px}.logo small{letter-spacing:2px;font-size:9px}.nav a{color:#ddd;text-decoration:none;padding:9px}.cart{background:#181712;color:white;border:1px solid #705716;border-radius:9px;padding:10px 13px}.count{background:#df2b25;border-radius:50%;padding:3px 7px;font-size:11px}
+.hero{min-height:430px;display:flex;align-items:center;background:linear-gradient(90deg,#000 0%,#000c 42%,#0002),url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=90") center/cover}.hero-inner{max-width:1200px;width:100%;margin:auto;padding:60px 25px}.hero h1{color:#f5b914;font-size:clamp(48px,7vw,82px);margin:15px 0 4px;text-transform:uppercase}.hero h2{letter-spacing:4px}.hero p{max-width:550px;color:#ddd;line-height:1.6}.order{display:inline-block;background:#f5b914;color:#111;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:8px}
+.cats{max-width:1200px;margin:auto;padding:18px;display:grid;grid-template-columns:repeat(7,1fr);gap:9px}.cat{background:#12120f;border:1px solid #5c4916;border-radius:9px;padding:7px;text-align:center}.cat img{width:100%;height:65px;object-fit:cover;border-radius:6px}.cat b{display:block;color:#f5b914;font-size:12px;margin-top:6px}
+main{max-width:1200px;margin:auto;padding:15px 18px 50px}.head{border-bottom:1px solid #38362f;padding-bottom:12px;margin-bottom:18px}.head h2{margin:0;font-size:30px}.head p{color:#aaa;font-size:12px}.layout{display:grid;grid-template-columns:1fr 285px;gap:18px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{background:#181714;border:1px solid #4e411a;border-radius:10px;overflow:hidden}.card img{width:100%;height:145px;object-fit:cover;display:block}.body{padding:11px}.body h3{font-size:14px;min-height:32px;margin:0 0 5px}.desc{font-size:10px;color:#999;min-height:28px}.price{color:#f5b914;font-weight:bold;margin:9px 0}.actions{display:flex;gap:5px}.qty{display:flex;border:1px solid #444;border-radius:6px}.qty button,.qty span{width:25px;background:#25241f;color:#fff;border:0;text-align:center;padding:6px}.add{flex:1;background:#f5b914;border:0;border-radius:6px;font-weight:bold;font-size:10px}
+.sidebar{position:sticky;top:85px;height:max-content}.box{background:#181714;border:1px solid #4e411a;border-radius:10px;padding:15px;margin-bottom:12px}.box h3{margin-top:0}.empty{text-align:center;color:#777;padding:25px 5px;font-size:12px}.row{display:flex;justify-content:space-between;border-bottom:1px solid #302f2a;padding:9px 0;font-size:11px}.row small{display:block;color:#999}.total{display:flex;justify-content:space-between;font-weight:bold;font-size:17px;margin-top:13px}.clear{float:right;background:none;border:0;color:#ef625b;font-size:10px}.wa{width:100%;background:#20c76a;color:white;border:0;border-radius:8px;padding:12px;margin-top:12px;font-weight:bold}.info{font-size:11px;color:#aaa;line-height:1.6}.info a{color:#f5b914}.deals{margin-top:35px}.dealgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.deal{height:210px;background-size:cover;background-position:center;border-radius:10px;position:relative;overflow:hidden}.deal:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000e,#0001)}.dealtext{position:absolute;z-index:2;bottom:14px;left:15px}.dealtext small{background:#df2b25;padding:5px;border-radius:4px}.dealtext h3{margin:8px 0 2px}.dealtext p{font-size:11px}
+footer{border-top:1px solid #292820;padding:30px 18px;background:#080807}.foot{max-width:1200px;margin:auto;display:flex;justify-content:space-between}.foot b{color:#f5b914;font-size:21px}.foot p{color:#888;font-size:11px}
+.modal{position:fixed;inset:0;background:#000b;z-index:20;display:none;place-items:center;padding:15px}.modal.show{display:grid}.modalbox{background:#181714;border:1px solid #705716;border-radius:12px;width:min(460px,100%);padding:20px}.close{float:right;background:none;border:0;color:#aaa;font-size:22px}.modalbox label{display:block;font-size:11px;margin-top:10px}.modalbox input,.modalbox textarea{width:100%;background:#0e0e0c;color:#fff;border:1px solid #46443d;border-radius:7px;padding:10px;margin-top:5px}.send{width:100%;background:#20c76a;color:#fff;border:0;border-radius:8px;padding:12px;margin-top:13px;font-weight:bold}
+@media(max-width:1000px){.nav a{display:none}.cats{grid-template-columns:repeat(4,1fr)}.grid{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.sidebar{position:static}.dealgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cats{display:flex;overflow:auto}.cat{min-width:100px}.grid{grid-template-columns:1fr 1fr}.card img{height:115px}.actions{flex-direction:column}.dealgrid{grid-template-columns:1fr}.foot{display:block}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="logo" href="#home"><b>ABDUL RAZZAQ</b><small>PAKISTANI FAST FOOD</small></a>
+<a href="#home">Home</a><a href="#menu">Order Online</a><a href="#deals">Deals</a>
+<button class="cart" onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">🛒 Cart <span class="count" id="count">0</span></button>
+</div></header>
+
+<section class="hero" id="home"><div class="hero-inner">
+<div>Real Taste • Desi Flavour • Freshly Made</div>
+<h1>Abdul Razzaq</h1><h2>PAKISTANI FAST FOOD</h2>
+<p>Fresh burgers, shawarma, pizza and family favourites prepared with bold Pakistani flavours.</p>
+<a class="order" href="#menu">ORDER NOW →</a>
+</div></section>
+
+<div class="cats">
+<a class="cat" href="#burgers"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=85"><b>Burgers</b></a>
+<a class="cat" href="#menu"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=400&q=85"><b>Shawarma</b></a>
+<a class="cat" href="#menu"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&q=85"><b>Sandwiches</b></a>
+<a class="cat" href="#menu"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=400&q=85"><b>Pasta</b></a>
+<a class="cat" href="#menu"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&q=85"><b>Pizza</b></a>
+<a class="cat" href="#menu"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=85"><b>Fries</b></a>
+<a class="cat" href="#deals"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=85"><b>Deals</b></a>
+</div>
+
+<main id="menu">
+<div class="head"><h2 id="burgers">🍔 Burgers</h2><p>Juicy, fresh and full of desi flavour.</p></div>
+<div class="layout"><div class="grid" id="products"></div>
+<aside class="sidebar" id="cart">
+<div class="box"><button class="clear" onclick="clearCart()">CLEAR</button><h3>🛒 Your Cart</h3><div id="cartItems"><div class="empty">Your cart is empty.<br>Add something delicious!</div></div><div class="total"><span>Total</span><span id="total">Rs. 0</span></div><button class="wa" onclick="checkout()">💬 Order on WhatsApp</button></div>
+<div class="box info">📍 <b>Location</b><br>Abdul Razzaq Fast Food<br><a href="https://maps.app.goo.gl/oTT4xp1wVwtvR7hy6" target="_blank">Open Google Maps →</a></div>
+</aside></div>
+
+<section class="deals" id="deals"><div class="head"><h2>🔥 Special Deals</h2><p>Great food. Great value.</p></div><div class="dealgrid">
+<div class="deal" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=85')"><div class="dealtext"><small>MOST POPULAR</small><h3>Buy 1 Get 1 Pizza</h3><p>Choose your favourite flavours.</p></div></div>
+<div class="deal" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=85')"><div class="dealtext"><small>BEST DEAL</small><h3>Family Burger Deal</h3><p>Perfect for sharing.</p></div></div>
+<div class="deal" style="background-image:url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=85')"><div class="dealtext"><small>FAMILY PACK</small><h3>Loaded Shawarma</h3><p>Big taste, desi style.</p></div></div>
+</div></section>
+</main>
+<footer><div class="foot"><div><b>ABDUL RAZZAQ</b><p>PAKISTANI FAST FOOD</p></div><p>📲 WhatsApp ordering available</p></div></footer>
+
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><h2>Complete Your Order</h2>
+<label>Name</label><input id="name" placeholder="Your name"><label>Phone</label><input id="phone" placeholder="03XX-XXXXXXX"><label>Delivery Address</label><textarea id="address" rows="3" placeholder="House / street / area"></textarea>
+<button class="send" onclick="sendOrder()">📲 Send Order on WhatsApp</button></div></div>
+
+<script>
+const WHATSAPP_NUMBER="923468712306";
+const products=[
+["Shami Burger",170,"Fresh shami kebab, special sauce.","https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"],
+["Shami Special Burger",250,"Shami kebab with egg, cheese and sauce.","https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=85"],
+["Double Egg Shami Burger",230,"Double egg with shami kebab.","https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=85"],
+["Double Egg Double Shami Burger",280,"Double shami kebab and double egg.","https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=700&q=85"],
+["Mix Burger",230,"Chicken and beef with special sauce.","https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=85"],
+["Mix Special Burger",300,"Chicken and beef with cheese and egg.","https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=700&q=85"],
+["Lapeta Burger",250,"Chicken patty with fresh veggies.","https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?auto=format&fit=crop&w=700&q=85"],
+["Special Lapeta Burger",300,"Double chicken with cheese and sauce.","https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=85"],
+["Jumbo Lapeta Burger",450,"Extra-large chicken burger.","https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=85"],
+["Chicken Jumbo Burger",600,"Crispy chicken with fresh veggies.","https://images.unsplash.com/photo-1615297928064-24977384d0b7?auto=format&fit=crop&w=700&q=85"],
+["Chicken Jumbo Lapeta Burger",500,"Double chicken, cheese and sauce.","https://images.unsplash.com/photo-1598182198871-d3f4ab4fd181?auto=format&fit=crop&w=700&q=85"],
+["Cream Salad Burger",250,"Crispy chicken with creamy salad.","https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=85"]
+];
+let cart=[];
+function render(){document.getElementById("products").innerHTML=products.map((p,i)=>`<article class="card"><img src="${p[3]}" alt="${p[0]}"><div class="body"><h3>${p[0]}</h3><div class="desc">${p[2]}</div><div class="price">Rs. ${p[1]}</div><div class="actions"><div class="qty"><button onclick="qty(${i},-1)">−</button><span id="q${i}">1</span><button onclick="qty(${i},1)">+</button></div><button class="add" onclick="add(${i})">ADD TO CART</button></div></div></article>`).join("")}
+function qty(i,n){let e=document.getElementById("q"+i);e.textContent=Math.max(1,Number(e.textContent)+n)}
+function add(i){let q=+document.getElementById("q"+i).textContent,f=cart.find(x=>x.i===i);f?f.q+=q:cart.push({i,q});update()}
+function update(){document.getElementById("count").textContent=cart.reduce((s,x)=>s+x.q,0);let t=cart.reduce((s,x)=>s+products[x.i][1]*x.q,0);document.getElementById("total").textContent="Rs. "+t.toLocaleString();document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>`<div class="row"><div><b>${products[x.i][0]}</b><small>${x.q} × Rs. ${products[x.i][1]}</small></div><b>Rs. ${products[x.i][1]*x.q}</b></div>`).join(""):'<div class="empty">Your cart is empty.<br>Add something delicious!</div>'}
+function clearCart(){cart=[];update()}
+function checkout(){if(!cart.length){alert("Please add an item first.");return}document.getElementById("modal").classList.add("show")}
+function closeModal(){document.getElementById("modal").classList.remove("show")}
+function sendOrder(){let n=document.getElementById("name").value.trim(),p=document.getElementById("phone").value.trim(),a=document.getElementById("address").value.trim();if(!n||!p||!a){alert("Please enter your name, phone and address.");return}let t=cart.reduce((s,x)=>s+products[x.i][1]*x.q,0),msg="*ABDUL RAZZAQ FAST FOOD - NEW ORDER*\n\nName: "+n+"\nPhone: "+p+"\nAddress: "+a+"\n\nItems:\n"+cart.map(x=>"• "+x.q+" × "+products[x.i][0]+" - Rs. "+products[x.i][1]*x.q).join("\n")+"\n\n*TOTAL: Rs. "+t+"*";window.location.href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg)}
+render();update();
+</script>
+</body>
+</html>
